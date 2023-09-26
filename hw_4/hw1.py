@@ -4,9 +4,10 @@
 # Затем пользователь вводит сами элементы множеств.
 
 from random import randint
-a_set = (randint(1, 20)
+n_set = (randint(1, 20)
          for i in range(int(input("введите первое колличество элементов: "))))
-print(a_set)
-b_set = (randint(1, 20)
+print(n_set)
+m_set = (randint(1, 20)
          for i in range(int(input("введите второе колличество элементов "))))
-print(b_set)
+print(m_set)
+
