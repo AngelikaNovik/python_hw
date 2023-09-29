@@ -3,8 +3,12 @@
 # Пользователь вводит 2 числа. n — кол-во элементов первого множества. m — кол-во элементов второго множества.
 # Затем пользователь вводит сами элементы множеств.
 
-def newset(num):
-    new_set=set()
-    for i in range(num):
-        new_set.add(int(input("введите число ")))
-
+from random import randint
+n_set = set(randint(1, 20)for i in range(
+    int(input("введите колличество элементов первого множества "))))
+print(n_set)
+m_set = set(randint(1, 20)for i in range(
+    int(input("введите колличество элементов второго множества "))))
+print(m_set)
+s_set=sorted(n_set.intersection(m_set))
+print(*s_set)
